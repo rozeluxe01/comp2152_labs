@@ -157,6 +157,15 @@ print("--- You are matched in strength: " + str(combat_strength == m_combat_stre
 # Check the Player's overall strength and health
 print("--- You have a strong player: " + str((combat_strength + health_points) >= 15))
 
+# Q2 
+input("Roll for the Monster Power! (Press Enter)")
+power_roll = random.choice(["Fire Magic", "Freezing Time", "Super Hearing"])
+
+# Q3
+m_combat_strength = min(6, m_combat_strength + monster_power[power_roll])
+print("The Monster Combat Strength is: " + str(m_combat_strength) + "Using the " + power_roll)
+
+
 # Loop while the monster and the player are alive. Call fight sequence functions
 print("You meet the monster. FIGHT!!")
 while m_health_points > 0 and health_points > 0:
