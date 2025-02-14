@@ -2,7 +2,7 @@
 import random
 
 # Put all the functions into another file and import them
-import Week06.functions_lab06 as functions_lab06
+import functions_lab06
 
 print("    ------------------------------------------------------------------")
 print("    |    Loading previous game data...")
