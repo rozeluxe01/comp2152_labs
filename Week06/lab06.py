@@ -7,7 +7,7 @@ import Week06.functions_lab06 as functions_lab06
 print("    ------------------------------------------------------------------")
 print("    |    Loading previous game data...")
 # Lab 06 - Question 5
-last_game = function_lab06.load_game()
+last_game = functions_lab06.load_game()
 # Game Flow
 # Define two Dice
 small_dice_options = list(range(1, 7))
