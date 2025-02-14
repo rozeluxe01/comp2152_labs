@@ -150,7 +150,7 @@ def save_game(winner, hero_name="", num_stars=0):
 # Lab 06 - Question 5a
 def load_game():
     try:
-        with open('save.txt', 'a') as file:
+        with open('save.txt', 'r') as file:
             print("    |    Loading from saved file..")
             lines = file.readlines()
             if lines:
@@ -174,4 +174,3 @@ def adjust_combat_strength(combat_strength, m_combat_strength):
                 print("     |     Increasing Hero's Combat Strength!"   )
             else:
                 print("     |     Last game had no effect on Hero/Monster Combat Strength!")
-                
