@@ -18,3 +18,6 @@ class Person():
 
 person1 = Person("Mike", 20, 6)
 print("The name of the person is: " + str(person1.name))
+
+person1.name = "Alfred"
+print("The name of the person is: " + str(person1.name))
